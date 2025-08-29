@@ -1,0 +1,32 @@
+# Ignore datasets
+datasets/
+*.csv
+*.tsv
+*.xlsx
+*.json
+*.zip
+
+# Ignore model training artifacts (keep only final saved model if needed)
+*.h5
+*.pkl
+*.joblib
+*.pt
+*.pth
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environments
+venv/
+env/
+.venv/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
