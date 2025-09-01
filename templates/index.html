@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akshar.Ai</title>
-    <link rel="stylesheet" href="../static/style.css">
+    <title>Akshar.AI - Hindi Character Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <h2>Draw a Hindi Character</h2>
@@ -12,6 +12,7 @@
     <button onclick="clearCanvas()">Clear</button>
     <button onclick="predict()">Predict</button>
     <p id="result">Result: </p>
-    <script src="../static/script.js"></script>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
