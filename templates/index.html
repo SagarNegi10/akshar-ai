@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akshar.AI - Hindi Character Recognition</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akshar.AI</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+  <!-- Floating Hindi Background -->
+  <div id="floating-background"></div>
+
+  <!-- Main App Content -->
+  <div class="content">
     <h2>Draw a Hindi Character</h2>
     <canvas id="canvas" width="280" height="280"></canvas><br>
     <button onclick="clearCanvas()">Clear</button>
     <button onclick="predict()">Predict</button>
     <p id="result">Result: </p>
+  </div>
 
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <script src="{{ url_for('static', filename='floating.js') }}"></script>
 </body>
 </html>
